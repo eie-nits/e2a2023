@@ -183,7 +183,7 @@ const Header = () => {
             </div>
             <div className="college-name mt-1">
               NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR <br />
-              (Assam, India)
+              Assam, India - 788010
             </div>
             {/* <div>
               <h6 className="organised-by bold mt-2 mb-1">

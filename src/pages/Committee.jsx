@@ -49,13 +49,13 @@ const Committee = () => {
         <div className='list'>
           <h1>Organizing Chairs/Secretary</h1>
           <div className='mt-2' style={{display: "flex", justifyContent: 'space-evenly', flexWrap: "wrap", width: "100%"}}>
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/rd.jpg"} name="Dr. Rajdeep Dasgupta," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/mk.jpg"} name="Dr. Munmun Khanra," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/skp.jpeg"} name="Dr. Shivendra Kumar Pandey," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/sk.jpg"} name="Dr. Shankar K." aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/ls.jpg"} name="Dr. Lalu Seban," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/jh.jpg"} name="Dr. Jupitara Hazarika" aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/vcp.jpg"} name="Dr. Vipin Chandra Pal," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/aks.jpg"} name="Dr. Arup Kumar Sharma" aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
           </div>
         </div>
 
