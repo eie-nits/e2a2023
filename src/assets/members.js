@@ -68,9 +68,6 @@ export default [
    "affiliation": "St. Gaits College of Engineering, Kottayam, Kerala"
   },
   {
-   "member": "Dr Arun Peethambaran"
-  },
-  {
    "member": "Dr Badal Soni",
    "affiliation": "NIT Silchar"
   },
@@ -131,9 +128,6 @@ export default [
    "affiliation": "NIT Warangal"
   },
   {
-   "member": "Dr Biswadeep Gupta Bakshi"
-  },
-  {
    "member": "Dr Sheetla Prasad",
    "affiliation": "Galgotia University"
   },
@@ -144,9 +138,6 @@ export default [
   {
    "member": "Dr Navneet Kumar Singh",
    "affiliation": "MNNIT Allahabad"
-  },
-  {
-   "member": "Dr Ankur Beohar"
   },
   {
    "member": "Dr Nikhil Deep Gupta",
@@ -173,12 +164,6 @@ export default [
    "affiliation": "Department of EE, IIT BHU"
   },
   {
-   "member": "Dr Souvik Ganguli"
-  },
-  {
-   "member": "Dr Jayendra Kumar"
-  },
-  {
    "member": "Dr Siva Kumar Tadepalli",
    "affiliation": "NIT Uttrakhand, Electronics Engineering"
   },
@@ -200,7 +185,7 @@ export default [
   },
   {
    "member": "Dr Tanmay Pal",
-   "affiliation": "iiest Shibpur"
+   "affiliation": "IIEST Shibpur"
   },
   {
    "member": "Dr Binoy Krishna Roy",
@@ -209,9 +194,6 @@ export default [
   {
    "member": "Dr R Periasamy",
    "affiliation": "NIT Trichy"
-  },
-  {
-   "member": "Dr Pankaj Pratap Singh"
   },
   {
    "member": "Dr Varun",

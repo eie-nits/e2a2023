@@ -9,6 +9,7 @@ import image1 from "/images/depImg1.jpeg";
 import image2 from "/images/e2a2022_img1.jpg";
 import image3 from "/images/depImg2.jpeg";
 import image4 from "/images/depImg3.jpeg";
+import image5 from "/images/nitSilchar.jpeg"
 
 const navItems = [
   {
@@ -95,6 +96,9 @@ const Header = () => {
           showStatus={false}
           swipeable={true}
         >
+          <div>
+            <img src={image5} />
+          </div>
           <div>
             <img src={image1} />
           </div>

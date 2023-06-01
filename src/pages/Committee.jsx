@@ -21,24 +21,24 @@ const Committee = () => {
 
         <div className='list'>
           <h1 style={{ marginBottom: '10px' }}>Patron</h1>
-          <ProfileCard img={"/images/dilip-kr-baidya.jpg"} name="Prof. Dilip Kumar Baidya," aff={"Director, NIT Silchar"} />
+          <ProfileCard img={"/images/dilip-kr-baidya.jpg"} name="Prof. Dilip Kumar Baidya" aff={"Director, NIT Silchar"} />
         </div>
         <div className='list'>
           <h1 style={{ marginBottom: '10px' }}>Honorary Chair</h1>
 
-          <ProfileCard img={"/images/Jagannath Sarangapani_Hon Chair.jpg"} name="Prof. Jagannathan Sarangapani," aff={"Missouri Institute of Science and Technology, USA"} style={{maxWidth: "350px"}} link="https://ece.mst.edu/faculty-directory/jagannathan-sarangapani/" />
+          <ProfileCard img={"/images/dsn.jpg"} name="Prof. Desineni Subbaram Naidu" aff={"University of Minnesota Duluth, USA"} style={{maxWidth: "350px"}} link="https://scse.d.umn.edu/faculty-staff/desineni-subbaram-naidu" />
         </div>
 
         <div className='list'>
           <h1 style={{ marginBottom: '-5px' }}>General Chair</h1>
           <div className='mt-2' style={{display: "flex", justifyContent: 'space-evenly', flexWrap: "wrap", width: "100%"}}>
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/Moncef Gabbouj_Gen Chair.jpg"} name={`Prof. Moncef Gabbouj,`} aff={"Tampere University, Finland"} link={"https://www.tuni.fi/en/moncef-gabbouj"} />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/danielStroe.jpeg"} name={`Dr. Daniel-Ioan Stroe`} aff={"Aalborg University, Denmark"} link={""} />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/Quanxin Zhu_Gen Chair.PNG"} name="Prof. Quan Xin Zhen," aff="Hunan Normal University, China" link="https://www.mc.hunnu.edu.cn/info/1744/3601.htm" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/drn.jpeg"} name="Dr. Nasimuddin" aff="A*STAR Singapore" link="https://scholar.google.com/citations?user=bHoBK3QAAAAJ&hl=en" />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/Shyam Sudhir Pandey_Gen Chair.jpg"} name="Prof. Shyam Sudhir Pandey," aff="Kyushu Institute of Technology, Japan" link="https://www.life.kyutech.ac.jp/~shyam/" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/shl.jpg"} name="Prof. Shahedul Haque Laskar" aff="NIT Silchar" link="https://www.life.kyutech.ac.jp/~shyam/" />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/Ranjay Hazra_Gen Chair.jpg"} name="Dr. Ranjay Hazra," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/skp.jpeg"} name="Dr. Shivendra Kumar Pandey" aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
           </div>
         </div>
         <div className='list'>
@@ -49,13 +49,13 @@ const Committee = () => {
         <div className='list'>
           <h1>Organizing Chairs/Secretary</h1>
           <div className='mt-2' style={{display: "flex", justifyContent: 'space-evenly', flexWrap: "wrap", width: "100%"}}>
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/mk.jpg"} name="Dr. Munmun Khanra," aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/mk.jpg"} name="Dr. Munmun Khanra" aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
 
             <ProfileCard style={{maxWidth: "300px"}} img={"/images/sk.jpg"} name="Dr. Shankar K." aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
 
-            <ProfileCard style={{maxWidth: "300px"}} img={"/images/jh.jpg"} name="Dr. Jupitara Hazarika" aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
-
             <ProfileCard style={{maxWidth: "300px"}} img={"/images/aks.jpg"} name="Dr. Arup Kumar Sharma" aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
+
+            <ProfileCard style={{maxWidth: "300px"}} img={"/images/pps.jpg"} name="Dr. Pravin P. S." aff="NIT Silchar" link="http://www.nits.ac.in/departments/instru/eie.php" />
           </div>
         </div>
 

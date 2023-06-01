@@ -13,7 +13,7 @@ const Home = () => {
   <>
     <section id="about" className="container home-page bg-white">
         <div className="about">
-          <h2 className="about-heading mb-1 mt-1">About The Conference</h2>
+          <h2 className="about-heading mb-1 mt-1"><u>About The Conference</u></h2>
           <div className="home-about-content">
             <p className="text1 mb-1">Emerging Electronics and Automation (E2A) 2023 is the 3<sup>rd</sup> annual International Conference organized by the Department of Electronics and Instrumentation Engineering at NIT Silchar, Assam. E2A 2023 is scheduled to be in hybrid mode between 15th and 17th December 2023.</p>
             <p className="text1">We are happy to share that till now, Department of EIE has successfully orgainised two editions of E2A. The proceedings of the First Edition is indexed in <a href="https://link.springer.com/" target="_blank" rel="noreferrer">Springer LNEE</a>.</p><br/> The same for the second edition is in progress and will be indexed soon. 
