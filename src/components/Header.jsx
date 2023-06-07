@@ -10,6 +10,7 @@ import image2 from "/images/e2a2022_img1.jpg";
 import image3 from "/images/depImg2.jpeg";
 import image4 from "/images/depImg3.jpeg";
 import image5 from "/images/nitSilchar.jpeg"
+import { Link } from "react-router-dom";
 
 const navItems = [
   {
@@ -133,14 +134,13 @@ const Header = () => {
                       : "nav-btn-box"
                   }
                 >
-                  <a
-                    href={
+                  <Link to={
                       item.pathname === "/about" ? "/#about" : item.pathname
                     }
                     className="nav-btn"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </div>
               )
             )}
@@ -155,13 +155,12 @@ const Header = () => {
             <ul id="menu">
               {navItems.map((item, i) => (
                 <li key={i}>
-                  <a
-                    href={
+                  <Link to={
                       item.pathname === "/about" ? "/#about" : item.pathname
                     }
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
