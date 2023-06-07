@@ -8,7 +8,7 @@ const DropDown = ({subItems, children}) => {
       <div className="dropdown-content">
         {
           subItems.map((el, key) => (
-            <a key={key} href={el.pathname}>{el.name}</a>
+            <Link key={key} to={el.pathname}>{el.name}</Link>
           ))
         }
       </div>
