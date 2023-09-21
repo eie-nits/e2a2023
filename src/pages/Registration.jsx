@@ -1,5 +1,6 @@
 import React from 'react'
 import "../assets/css/registration.css"
+import Header from '../components/Header';
 
 const Registration = () => {
   const container = React.useRef(null);
@@ -9,6 +10,8 @@ const Registration = () => {
 
   React.useEffect(scrollToBottom, []);
   return (
+    <>
+    <Header/>
     <div className='bg-white ptb-4' ref={container}>
       <div className='registration'>
         <h3>Registration Category</h3>
@@ -113,6 +116,7 @@ const Registration = () => {
           </ol> */}
         </div>
       </div>
+      </>
   )
 }
 

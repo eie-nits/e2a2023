@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../assets/papers"
 import "../assets/css/callForPapers.css"
+import Header from "../components/Header";
 
 const CallForPapers = () => {
   const [activeState, setActiveState] = React.useState([...new Array(data.length).fill(false)])
@@ -25,7 +26,7 @@ const CallForPapers = () => {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header/>
       <div className="main-content mb-2" ref={container}>
         <div className="paper-heading">
           <span className="heading-text">
@@ -35,7 +36,7 @@ const CallForPapers = () => {
         </div>
         <div className="paper-list mb-3">
           <p className="call-des">
-            First International Conference on Emerging Electronics & Automation (E2A) will be organized by Department of Electronics and Instrumentation Engineering, NIT Silchar from 16th - 18th December, 2022. Prospective authors are requested to submit their original work for publication in the proceedings of E2A. The thrust areas are as follows but not limited to this.
+            Third International Conference on Emerging Electronics & Automation (E2A) will be organized by Department of Electronics and Instrumentation Engineering, NIT Silchar from 15th - 17th December, 2023. Prospective authors are requested to submit their original work for publication in the proceedings of E2A. The thrust areas are as follows but not limited to this.
           </p>
           <div className="list-accordion">
             <div className="list-accordion-item">

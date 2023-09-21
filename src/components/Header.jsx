@@ -10,6 +10,7 @@ import image2 from "/images/e2a2022_img1.jpg";
 import image3 from "/images/depImg2.jpeg";
 import image4 from "/images/depImg3.jpeg";
 import image5 from "/images/nitSilchar.jpeg"
+import image6 from "/images/e2a2021.png"
 import { Link } from "react-router-dom";
 
 const navItems = [
@@ -22,7 +23,7 @@ const navItems = [
     name: "About Conference",
   },
   {
-    // pathname: "/registration",
+    pathname: "/registration",
     name: "For Authors",
     subItems: [
       {
@@ -35,24 +36,24 @@ const navItems = [
       },
     ],
   },
-  // {
-  //   pathname: "/call-for-papers",
-  //   name: "Call for Papers",
-  // },
-  // {
-  //   // pathname: "/program",
-  //   name: "Program",
-  //   subItems: [
-  //     {
-  //       name: "Brochure",
-  //       pathname: "/program-brochure",
-  //     },
-  //     {
-  //       name: "Schedule",
-  //       pathname: "/program-schedule",
-  //     },
-  //   ],
-  // },
+  {
+    pathname: "/call-for-papers",
+    name: "Call for Papers",
+  },
+  {
+    pathname: "/program",
+    name: "Program",
+    subItems: [
+      {
+        name: "Brochure",
+        pathname: "/program-brochure",
+      },
+      // {
+      //   name: "Schedule",
+      //   pathname: "/program-schedule",
+      // },
+    ],
+  },
   {
     pathname: "/important-dates",
     name: "Important Dates",
@@ -61,10 +62,10 @@ const navItems = [
     pathname: "/committee",
     name: "Committee",
   },
-  // {
-  //   pathname: "/sponsorship",
-  //   name: "Sponsorship",
-  // },
+  {
+    pathname: "/sponsorship",
+    name: "Sponsorship",
+  },
   {
     pathname: "/contact-us",
     name: "Contact us",
@@ -83,9 +84,23 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
+  const handleClickScrollHome = () => {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleClickScrollHero = () => {
+    const element = document.getElementById('header');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
-      <div className="header">
+      <div className="header" id="header">
         <Carousel
           showThumbs={false}
           showIndicators={false}
@@ -96,6 +111,8 @@ const Header = () => {
           useKeyboardArrows={true}
           showStatus={false}
           swipeable={true}
+          interval={4000}
+          
         >
           <div>
             <img src={image5} />
@@ -129,10 +146,11 @@ const Header = () => {
                 <div
                   key={i}
                   className={
-                    item.pathname == window.location.pathname
+                    (item.pathname == window.location.pathname)
                       ? "nav-btn-box active-btn"
                       : "nav-btn-box"
                   }
+                  onClick={item.pathname === "/about" ? handleClickScrollHome : handleClickScrollHero}
                 >
                   <Link to={
                       item.pathname === "/about" ? "/#about" : item.pathname
@@ -153,25 +171,50 @@ const Header = () => {
             <span></span>
             <span></span>
             <ul id="menu">
-              {navItems.map((item, i) => (
-                <li key={i}>
+              {navItems.map((item, i) =>
+                item.subItems && item.subItems.length > 0 ? (
+                <div key={i}>
+                  <DropDown subItems={item.subItems}>
+                    <a className="nav-btn">{item.name}</a>
+                  </DropDown>
+                </div>
+              ) : (
+                <div
+                  key={i}
+                  className={
+                    item.pathname == window.location.pathname
+                      ? "nav-btn-box active-btn"
+                      : "nav-btn-box"
+                  }
+                  onClick={item.pathname === "/about" ? handleClickScrollHome : handleClickScrollHero}
+                >
+                  <Link to={
+                      item.pathname === "/about" ? "/#about" : item.pathname
+                    }
+                    className="nav-btn"
+                  >
+                    {item.name}
+                  </Link>
+                </div>
+              )
+              )}
+
+              {/* <li key={i}>
                   <Link to={
                       item.pathname === "/about" ? "/#about" : item.pathname
                     }
                   >
                     {item.name}
                   </Link>
-                </li>
-              ))}
+                </li> */}
             </ul>
           </div>
         </nav>
         <div className="headerContent">
           <div className="content-container">
             <div className="heading">
-              3<sup>rd</sup> INTERNATIONAL CONFERENCE{" "}
-              <span className="red-text">ON EMERGING ELECTRONICS</span> AND
-              AUTOMATION
+              3<sup>rd</sup> INTERNATIONAL CONFERENCE ON{" "}
+              <span className="red-text">EMERGING ELECTRONICS AND AUTOMATION</span>
             </div>
             <div className="date">
               15<sup>th</sup> - 17<sup>th</sup> Dec,{" "}
@@ -188,12 +231,12 @@ const Header = () => {
               NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR <br />
               Assam, India - 788010
             </div>
-            {/* <div>
+            <div>
               <h6 className="organised-by bold mt-2 mb-1">
                 Technically Co-Sponsored by
               </h6>
               <img className="logo2" src="/logos/logo_springer.jpg" alt="" />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

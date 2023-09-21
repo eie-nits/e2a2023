@@ -1,5 +1,6 @@
 import React from 'react'
 import "../assets/css/contactUs.css";
+import Header from '../components/Header';
 
 const ContactUs = () => {
   const [subject, setSubject] = React.useState("")
@@ -21,6 +22,8 @@ const ContactUs = () => {
   }
 
   return (
+    <>
+      <Header/>
     <div className="container ptb-4" ref={container}>
       <div className="card">
         <div className="members">
@@ -57,6 +60,7 @@ const ContactUs = () => {
             </form>
       </div>
     </div>
+    </>
   )
 }
 

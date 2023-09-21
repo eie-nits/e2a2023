@@ -14,12 +14,13 @@ import RegularPaperSubmission from "./pages/RegularPaperSubmission";
 import Sponsorship from "./pages/Sponsorship";
 import Schedule from "./pages/Schedule";
 import Footer from "./components/Footer";
+import PhotoGallary from "./pages/PhotoGallary";
+import Brochure from "./pages/Brochure";
 
 const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path="/" exact element={<Home/>} />
           <Route path="/call-for-papers" exact element={<CallForPapers />} />
@@ -31,6 +32,8 @@ const App = () => {
           <Route path="/program" exact element={<Program />} />
           <Route path="/sponsorship" exact element={<Sponsorship />} />
           <Route path="/program-schedule" exact element={<Schedule />} />
+          <Route path="/program-brochure" exact element={<Brochure />} />
+          <Route path="/gallary" exact element={<PhotoGallary />} />
         </Routes>
         <Footer />
       </BrowserRouter>

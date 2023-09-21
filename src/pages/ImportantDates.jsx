@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../components/Header';
 
 const ImportantDates = () => {
   const container = React.useRef(null);
@@ -9,6 +10,8 @@ const ImportantDates = () => {
   React.useEffect(scrollToBottom, []);
 
   return (
+    <>
+        <Header/>
     <div className='main-content' ref={container}>
         <div className='paper-heading'>
           <span className='red-text'>IMPORTANT DATES FOR PAPER SUBMISSION</span>
@@ -19,13 +22,13 @@ const ImportantDates = () => {
 
         <ul>
           <li style={{textAlign: "start", fontSize: "1.5rem"}} className='mtb-1'>
-            Paper Submission Opens: 25.06.2023
+            Paper Submission Opens: 01.07.2023
           </li>
           <li style={{textAlign: "start", fontSize: "1.5rem"}} className='mtb-1'>
-            Submission Deadline: 31.08.2023
+            Submission Deadline: 30.09.2023
           </li>
           <li style={{textAlign: "start", fontSize: "1.5rem"}} className='mtb-1'>
-            Acceptance Notification: 21.09.2023
+            Acceptance Notification: 31.10.2023
           </li>
           {/* <li style={{textAlign: "start", fontSize: "1.5rem"}} className='mtb-1'>
             Deadline For Final Paper: 15.11.2022
@@ -33,6 +36,7 @@ const ImportantDates = () => {
         </ul>
         <div className="mb-4" />
       </div>
+      </>
   )
 }
 
