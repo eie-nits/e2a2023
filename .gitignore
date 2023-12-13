@@ -1,3 +1,7 @@
+# Custom Ignore
+dist_13Dec.zip
+newTpc.xlsx
+
 # Logs
 logs
 *.log

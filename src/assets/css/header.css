@@ -133,8 +133,12 @@ h6 {
   font-size: 25px !important;
 }
 .logo2 {
-  width: 200px;
-  height: auto;
+  width: 120px;
+  height: 55px;
+}
+.serbLogo{
+  width: 120px;
+  height: 55px;
 }
 @media (max-width: 768px) {
   .content-container  {
@@ -354,13 +358,18 @@ h6 {
   text-align: center;
   margin-top: 1%;
 }
+.hybridText{
+  font-size: 1.5rem;
+  margin: 1% 0;
+  /* font-weight: 600; */
+}
 .organised-by {
   position: relative;
   font-size: 20px;
   font-weight: 500;
   color: white;
   text-align: center;
-  margin-top: 3%;
+  /* margin-top: 2%; */
 }
 .college-name {
   position: relative;

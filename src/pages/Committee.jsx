@@ -64,22 +64,22 @@ const Committee = () => {
         <div className='list'>
           <h1>Technical Program Chairs</h1>
           <h3>
-            <strong>Control & Robotics: </strong> Dr. Sudipto Chakraborty
+            <strong>Control & Robotics: </strong> Dr. Sudipta Chakraborty
           </h3>
           <h3>
-            <strong>Signal Processing: </strong>Dr. Jupitara Hazarika
+            <strong>Signal Processing: </strong>Dr. Anup Kumar Sharma
           </h3>
           <h3>
             <strong>Communication System: </strong>Dr. Ranjay Hazra
           </h3>
           <h3>
-            <strong>MEMS & VLSI: </strong>Dr. Arun Kumar Sunaniya
+            <strong>MEMS & VLSI: </strong>Dr. Shivendra Kumar Pandey
           </h3>
           <h3>
             <strong>AI & Soft Computing: </strong>Dr. Lalu Seban
           </h3>
           <h3>
-            <strong>Sensors & Instrumentation: </strong>Dr. Sudharsan Sahoo
+            <strong>Sensors & Instrumentation: </strong>Dr. Sudarsan Sahoo
           </h3>
           <h3>
             <strong>Energy, Power Systems & Power Electronics: </strong>Dr. Munmun

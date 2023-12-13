@@ -38,3 +38,23 @@
 .list3 {
   list-style-type: lower-roman;
 }
+
+.highlightText{
+  background-color: yellow;
+}
+
+.question{
+  color: blue;
+}
+
+.redText{
+  color: red;
+}
+
+.grayText{
+  color:gray
+}
+
+.boldText{
+  font-weight: 700;
+}

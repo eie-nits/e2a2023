@@ -11,6 +11,7 @@ import image3 from "/images/depImg2.jpeg";
 import image4 from "/images/depImg3.jpeg";
 import image5 from "/images/nitSilchar.jpeg"
 import image6 from "/images/e2a2021.png"
+import newLogo from "/logos/tnew.gif";
 import { Link } from "react-router-dom";
 
 const navItems = [
@@ -34,6 +35,14 @@ const navItems = [
         name: "Regular Paper Submission",
         pathname: "/author-regular-paper-submission",
       },
+      {
+        name: "Instructions for Online Presentation",
+        pathname: "/author-instructions-online",
+      },
+      {
+        name: "Instructions for Offline Presentation",
+        pathname: "/author-instructions-offline",
+      },
     ],
   },
   {
@@ -47,6 +56,14 @@ const navItems = [
       {
         name: "Brochure",
         pathname: "/program-brochure",
+      },
+      {
+        name: "Schedule",
+        pathname: "/program-schedule",
+      },
+      {
+        name: "Keynote Speakers",
+        pathname: "/keynote-speakers",
       },
       // {
       //   name: "Schedule",
@@ -157,7 +174,7 @@ const Header = () => {
                     }
                     className="nav-btn"
                   >
-                    {item.name}
+                    {item.name} {item.name==="Important Dates" ? <img src={newLogo} width="45px"/> : <></> }
                   </Link>
                 </div>
               )
@@ -193,7 +210,7 @@ const Header = () => {
                     }
                     className="nav-btn"
                   >
-                    {item.name}
+                    {item.name} {item.name==="Important Dates" ? <img src={newLogo}/> : <></> }
                   </Link>
                 </div>
               )
@@ -220,6 +237,7 @@ const Header = () => {
               15<sup>th</sup> - 17<sup>th</sup> Dec,{" "}
               <span className="red-text">2023</span>
             </div>
+            <div className="hybridText">[HYBRID]</div>
             <div className="organised-by">
               Organised by <br /> Department of Electronics and Instrumentation
               Engineering
@@ -235,6 +253,7 @@ const Header = () => {
               <h6 className="organised-by bold mt-2 mb-1">
                 Technically Co-Sponsored by
               </h6>
+              <img className="serbLogo" src="/logos/serb_logo.png" alt="" />{"&nbsp; &nbsp;"}
               <img className="logo2" src="/logos/logo_springer.jpg" alt="" />
             </div>
           </div>

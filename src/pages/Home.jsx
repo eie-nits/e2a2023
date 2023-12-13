@@ -8,6 +8,8 @@ import fileLines from "../assets/svg/file-lines-solid.svg";
 import website from "../assets/svg/website.svg";
 import CustomHR from "../components/CustomHR";
 import Header from "../components/Header";
+import speakers from "../assets/speakers"
+import SpeakerCard from "../components/SpeakerCard";
 
 const Home = () => {
 
@@ -199,15 +201,6 @@ const Home = () => {
               >
                 E2A2022
               </a>
-              <br />
-              <a
-                style={{ color: "#127CCC" }}
-                className="e2a-link"
-                target="__blank"
-                href="http://e2a.nits.ac.in"
-              >
-                E2A2021
-              </a>
             </p>
           </div>
           <CustomHR color="#626E75" large={true} />
@@ -280,25 +273,26 @@ const Home = () => {
 
       <section className="keynote-speakers pt-4">
         <h3 className="heading_h3">Key Note Speakers</h3>
-        <span className="red-text mb-2">(To be updated soon...)</span>
+        {/* <span className="red-text mb-2">(To be updated soon...)</span> */}
         {/* <p className="mt-2 mb-1">Here are our Key note Speakers</p> */}
-        <div className="mtb-2" />
-        <CustomHR color="#777" />
-        <div className="mb-3" />
-        <div className="user-container pb-4">
-          {/* {users.map((user, i) => {
+        <div className="user-container pb-4 speaker-box">
+          {speakers.map((user, i) => {
           const props = {
             img: user.img,
             name: user.name,
-            bio: user.bio,
             designation: user.designation
           }
           return (
-            <ProfileCard key={i} {...props} />
+            <SpeakerCard key={i} {...props} />
           )
-        })} */}
+        })}
           {/* <span className='red-text'>To be updated soon...</span> */}
+          
         </div>
+        <div className="mtb-2" />
+        <CustomHR color="#777" />
+        <div className="mb-3" />
+        <br />
       </section>
     </>
   );
