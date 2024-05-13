@@ -249,13 +249,19 @@ const Header = () => {
               NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR <br />
               Assam, India - 788010
             </div>
-            <div>
+            <div className="logoBox">
+              <div>
               <h6 className="organised-by bold mt-2 mb-1">
                 Technically Co-Sponsored by
               </h6>
-              <img className="serbLogo" src="/logos/serb_logo.png" alt="" />{"&nbsp; &nbsp;"}
+              </div>
+              <div className="lBox">
+              <img className="serbLogo" src="/logos/serb_logo.png" alt="" />
               <img className="logo2" src="/logos/logo_springer.jpg" alt="" />
-            </div>
+              <img className="logo2" src="/logos/infoTechLogo.jpg" alt="" />
+              <img className="logo2" src="/logos/bmgLogo.jpg" alt="" />
+              </div>
+              </div>
           </div>
         </div>
       </div>
